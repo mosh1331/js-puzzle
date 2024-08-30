@@ -5,7 +5,7 @@ function Container() {
   const [level, setLevel] = useState(1);
 
   const nextLevel = () => {
-    setLevel(level + 1);
+    setLevel(prevLevel => prevLevel + 1);
   };
 
   return (
